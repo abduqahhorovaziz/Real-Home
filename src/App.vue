@@ -10,7 +10,7 @@
 
 <script>
 import Header from "@/components/Header.vue";
-import Footer from "@/components/FooterFoot.vue";
+import Footer from "@/components/Footer/FooterFoot.vue";
 export default {
   components: {
     Header,
