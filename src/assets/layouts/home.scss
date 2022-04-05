@@ -1,0 +1,25 @@
+.home{
+    position: relative;
+
+    &__offering{
+        padding: 125px 0;
+        position: relative;
+    }
+    &__offeringTitle{
+        font-size: 37px;
+        color: $dark;
+        text-align: right;
+        font-weight: 500; 
+    }
+    &_border{
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            right: 15px;
+            background-color: $dark;
+        }
+    }
+}

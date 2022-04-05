@@ -1,16 +1,13 @@
 <template>
-    <MainContainer>
-        <h1>Contacts</h1>
-    </MainContainer>
+  <div class="container">
+    <h1>Contacts</h1>
+  </div>
 </template>
 
 <script>
-import MainContainer from "../components/MainContainer.vue";
 
 export default {
-    name: 'ContactsView',
-    components: {
-        MainContainer,
-    }
-}
+  name: "ContactsView",
+  components: {},
+};
 </script>
