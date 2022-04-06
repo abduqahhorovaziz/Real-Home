@@ -1,10 +1,12 @@
 <template>
   <div class="home">
     <CarouselComp />
-    <div class="container home__offering ">
+    <div class="container home__offering">
       <div class="row">
         <div class="col-md-4 home_border">
-          <h3 class="home__offeringTitle">We are Offering the Best Estate Deals</h3>
+          <h3 class="home__offeringTitle">
+            We are Offering the Best Estate Deals
+          </h3>
         </div>
         <div class="col-md-8">
           <p>
@@ -19,16 +21,30 @@
         </div>
       </div>
     </div>
+    <FeaturesComp :data="featureData" />
+    <PropertiesComp :propertiesData="propertiesData"/>
   </div>
 </template>
 
 <script>
+import { featureData, propertiesData } from "../data/data.dummy";
+
 import CarouselComp from "../components/CarouselComp.vue";
+import FeaturesComp from "../components/FeaturesComp.vue";
+import PropertiesComp from "../components/PropertiesComp.vue";
 
 export default {
   name: "HomeView",
   components: {
     CarouselComp,
+    FeaturesComp,
+    PropertiesComp,
+  },
+  data() {
+    return {
+      featureData: featureData,
+      propertiesData: propertiesData,
+    };
   },
 };
 </script>

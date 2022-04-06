@@ -66,7 +66,7 @@ export default {
   padding: 25px;
 
   &:hover{
-    background-color: $gray;
+    background-color: $grayLight;
   }
 }
 
@@ -74,7 +74,7 @@ export default {
   a{
     width: 30px;
     height: 30px;
-    border: 1px solid $gray;
+    border: 1px solid $grayLight;
     text-align: center;
     border-radius: 50%;
     margin-right: 10px;
