@@ -32,7 +32,7 @@ export const propertiesData = [
     image: "prop",
     title: "Cloudcroft Drop",
     subtitle: "Illinois / Chicago",
-    price: 250000,
+    price: 250,
     desc: {
       sqft: "1450",
       rooms: 2,
@@ -44,7 +44,7 @@ export const propertiesData = [
     image: "prop",
     title: "Cloudcroft Drop",
     subtitle: "Illinois / Chicago",
-    price: 250000,
+    price: 250,
     desc: {
       sqft: "1450",
       rooms: 2,
@@ -56,7 +56,7 @@ export const propertiesData = [
     image: "prop",
     title: "Cloudcroft Drop",
     subtitle: "Illinois / Chicago",
-    price: 250000,
+    price: 250,
     desc: {
       sqft: "1450",
       rooms: 2,
@@ -68,7 +68,7 @@ export const propertiesData = [
     image: "prop",
     title: "Cloudcroft Drop",
     subtitle: "Illinois / Chicago",
-    price: 250000,
+    price: 250,
     desc: {
       sqft: "1450",
       rooms: 2,
@@ -80,7 +80,7 @@ export const propertiesData = [
     image: "prop",
     title: "Cloudcroft Drop",
     subtitle: "Illinois / Chicago",
-    price: 250000,
+    price: 250,
     desc: {
       sqft: "1450",
       rooms: 2,
@@ -92,7 +92,7 @@ export const propertiesData = [
     image: "prop",
     title: "Cloudcroft Drop",
     subtitle: "Illinois / Chicago",
-    price: 250000,
+    price: 250,
     desc: {
       sqft: "1450",
       rooms: 2,

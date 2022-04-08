@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <CarouselComp />
+    <carousel-comp />
     <div class="container home__offering">
       <div class="row">
         <div class="col-md-4 home_border">
@@ -21,8 +21,32 @@
         </div>
       </div>
     </div>
-    <FeaturesComp :data="featureData" />
-    <PropertiesComp :propertiesData="propertiesData"/>
+    <features-comp :data="featureData" />
+    <div class="properties">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2 class="properties__h2">
+              Featured
+              <b>Properties</b>
+            </h2>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <p class="properties__subtitle">
+              Quisque diam lorem interdum vitaapibus vitae pede. Donec eget
+              tellus non erat lacinia fertum. Donec in velit vel ipsum
+              auctovinar.
+            </p>
+          </div>
+        </div>
+
+        <PropertiesComp :propertiesData="propertiesData" />
+      </div>
+    </div>
+
+    <div class="home__slider">
+      <carousel-picture-content />
+    </div>
   </div>
 </template>
 
@@ -32,6 +56,7 @@ import { featureData, propertiesData } from "../data/data.dummy";
 import CarouselComp from "../components/CarouselComp.vue";
 import FeaturesComp from "../components/FeaturesComp.vue";
 import PropertiesComp from "../components/PropertiesComp.vue";
+import CarouselPictureContent from "../components/CarouselPictureContent.vue";
 
 export default {
   name: "HomeView",
@@ -39,6 +64,7 @@ export default {
     CarouselComp,
     FeaturesComp,
     PropertiesComp,
+    CarouselPictureContent,
   },
   data() {
     return {
