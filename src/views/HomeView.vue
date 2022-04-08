@@ -40,12 +40,16 @@
           </div>
         </div>
 
-        <PropertiesComp :propertiesData="propertiesData" />
+        <properties-comp :propertiesData="propertiesData" />
       </div>
     </div>
 
     <div class="home__slider">
       <carousel-picture-content />
+    </div>
+
+    <div class="home__banner">
+      <banner-comp/>
     </div>
   </div>
 </template>
@@ -57,6 +61,7 @@ import CarouselComp from "../components/CarouselComp.vue";
 import FeaturesComp from "../components/FeaturesComp.vue";
 import PropertiesComp from "../components/PropertiesComp.vue";
 import CarouselPictureContent from "../components/CarouselPictureContent.vue";
+import BannerComp from "../components/BannerComp.vue";
 
 export default {
   name: "HomeView",
@@ -65,6 +70,7 @@ export default {
     FeaturesComp,
     PropertiesComp,
     CarouselPictureContent,
+    BannerComp,
   },
   data() {
     return {

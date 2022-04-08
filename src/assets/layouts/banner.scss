@@ -1,0 +1,16 @@
+.banner{
+    height: 135px;
+    background: $grayLight;
+
+    &__title{
+        font-size: 37px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    &__btn{
+        background: $red;
+        color: #fff;
+        margin-left: auto;
+        display: block;
+    }
+}

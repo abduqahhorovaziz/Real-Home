@@ -1,6 +1,69 @@
-.carousel-picture-content{
-    &__img{
-        max-height: 467px;
-        height: 100%;
+.carousel-picture-content {
+  &__img {
+    max-height: 470px;
+    height: 100%;
+  }
+
+  &__header {
+    margin-bottom: 80px;
+    position: relative;
+
+    &::after {
+      content: "";
+      border-bottom: 2px solid $red;
+      width: 110px;
+      position: absolute;
+      bottom: -40px;
     }
+  }
+
+  &__title {
+    font-size: 45px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  &__name {
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  &__links {
+    color: $primary;
+  }
+
+  &__tel,
+  &__email {
+    padding-left: 10px;
+    color: $primary;
+  }
+
+  &__email {
+    color: $red;
+  }
+
+  &__buttons{
+      bottom: inherit;
+      top: 27px;
+      left: -55px;
+
+      li{
+          width: 15px;
+          height: 15px;
+          background-color: transparent;
+          border-radius: 50%;
+          border: 1px solid $primary;
+          box-sizing: border-box;
+
+          &.active{
+              background-color: $red;
+              border: none;
+          }
+      }
+  }
 }
